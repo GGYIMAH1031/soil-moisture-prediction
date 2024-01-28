@@ -6,8 +6,8 @@ FROM continuumio/miniconda3:latest
 COPY . /app
 ADD learner.pkl /app/learner.pkl
 ADD predictor.pkl /app/predictor.pkl
-COPY models/ /app/models/
-COPY utils/ /app/utils/
+COPY models /app/models
+COPY utils /app/utils
 ADD metadata.json /app/metadata.json
 
 # Set the working directory
