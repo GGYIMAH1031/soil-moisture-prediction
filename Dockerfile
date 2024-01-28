@@ -28,6 +28,13 @@ RUN conda install -c conda-forge mamba && \
 #!mkdir -m 700 flagged
 
 # Copy the current directory contents into the container at /app
+COPY . /app
+ADD learner.pkl /app/learner.pkl
+ADD predictor.pkl /app/predictor.pkl
+ADD models /app/models
+ADD utils /app/utils
+ADD metadata.json /app/metadata.json
+
 COPY . .
 
 EXPOSE 8080

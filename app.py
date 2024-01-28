@@ -31,7 +31,7 @@ current_directory_string = str(current_directory) + '/'
 
 
 # Load the AutoGluon model
-#model = TabularPredictor.load('./')
+#model = TabularPredictor.load('/app/')
 
 model = TabularPredictor.load(current_directory_string)
  
@@ -79,6 +79,7 @@ demo = gr.Interface(
            ],
     outputs=[gr.Number(value=0.22719, label="Predicted Soil Moisture at 5cm Depth")],
     live=True,
+    allow_flagging="never",
     title = "Predicting Soil Moisture at 5cm Depth with Weather Data",
     #thumbnail="./FinalModel-SoilMoisture/moisture-from-weather-data.png"
 )
