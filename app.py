@@ -27,7 +27,7 @@ from autogluon.tabular import TabularPredictor
 #absolute_path = os.path.abspath(model_dir)
 
 current_directory = os.getcwd()
-current_directory_string = str(current_directory)
+current_directory_string = str(current_directory) + '/'
 
 
 # Load the AutoGluon model
