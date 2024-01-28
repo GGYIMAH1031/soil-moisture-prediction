@@ -31,7 +31,7 @@ current_directory_string = str(current_directory)
 
 
 # Load the AutoGluon model
-model = TabularPredictor.load('./')
+#model = TabularPredictor.load('./')
 
 model = TabularPredictor.load(current_directory_string)
  
