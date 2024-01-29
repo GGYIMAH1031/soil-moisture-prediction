@@ -48,5 +48,6 @@ COPY . .
 EXPOSE 8080
 
 # Specify the command to run on container start
-CMD ["python", "app.py"]
+#CMD ["python", "app.py"]
 #CMD ["/bin/bash"]
+CMD ["bash"]
